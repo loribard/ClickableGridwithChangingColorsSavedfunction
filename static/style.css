@@ -10,20 +10,20 @@ font-family:sans-serif; font-size:13px
 /*background-color:yellow;*/
 font-weight:bold; color:red;
 }
-.buttons {
-height:50px;
-width:75px;
-font-size:18px;
-border-style:solid;
-border-color:black;
-}
+
 h1 {
 text-align:center;
 }
-.submit {
-height:50px;
-width:75px;
-font-size:18px;
-border-style:solid;
-border-color:black;
+
+button {
+  
+    margin-right:5px;
+    margin-bottom:10px;
+    height:50px;
+    width:100px;
+    display:inline-block;
+    text-align:center;
+    font-size:18px;
+    border-style:solid;
+    border-color:black;
 }
