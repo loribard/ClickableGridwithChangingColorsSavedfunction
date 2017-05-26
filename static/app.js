@@ -18,8 +18,6 @@ console.log(list);
 
 document.body.appendChild(grid);
 
-
-
 function setColor() {
 var letters = "0123456789ABCDEF";
 var color = '#';
@@ -28,9 +26,6 @@ color += letters[Math.floor(Math.random() * 16)];
 }
 return color;
 }
-
-
-
 
 function clickableGrid( rows, cols, callback ){
 var i=0;
@@ -53,9 +48,6 @@ callback(el,r,c,i);
 return grid;
 }
 
-
-
-
   function myFunction() {
     location.reload();
     console.log("Resetting");
@@ -63,7 +55,6 @@ return grid;
 
 
 function mySavedHTML() {
-  console.log("IN MY SAVED HTML");
   myhtml = $('table').html();
   console.log(myhtml,typeof myhtml);
   $.ajax({
@@ -74,12 +65,6 @@ function mySavedHTML() {
 }
 
  
-function seeSavedHTML() {
-    console.log("FOUND SAVED", saved);
-    // $("html").html(saved);
-    document.body.innerHTML = saved;
 
-  // body.innerHTML(saved);
-}
 
 
