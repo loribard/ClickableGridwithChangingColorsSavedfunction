@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="/static/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1> AltSchool Challenge </h1>
+    <h3>Create a board of n x m tiles on a web page. Each tile on the board will start as white, but when clicked will toggle between a generated random color and returning to white. Each time a tile is toggled to a random color it should generate a new random color value.
+    Include a button so that users can clear (set all tiles to white) on their board.
+    And additionally include a save button that will persist the state of the board to a server side datastore.
+    Instructions:
+    * Respond with your attached completed solution.
+    * Use any languages, frameworks, or 3rd party libraries as you see fit.
+    * Let us know if you have any questions as you're attempting the challenge.</h3>
+    <form action="/homepage" class="size" method="POST">
+      Rows <br>
+      <input type="number" class="buttons" name="rows" value="rows"> <br>
+      Columns <br>
+      <input type="number" class="buttons" name="columns" value="columns"> <br><br>
+      <input class="submit" type="submit" value="Submit">
+    </form>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript"> window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js">\x3C/script>')</script>
+    
+    <script type="text/javascript" src="/static/app.js"></script>
+  </body>
+</html>
