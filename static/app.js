@@ -2,7 +2,6 @@ var lastClicked;
 var el;
 var html;
 var list = [];
-
 var grid = clickableGrid(rows,columns,function(el,row,col,i){
 console.log("You clicked on element:",el);
 console.log("You clicked on row:",row);
@@ -15,9 +14,7 @@ el.className='clicked';
 list.push(el);
 console.log(list);
 });
-
 document.body.appendChild(grid);
-
 function setColor() {
 var letters = "0123456789ABCDEF";
 var color = '#';
@@ -26,11 +23,9 @@ color += letters[Math.floor(Math.random() * 16)];
 }
 return color;
 }
-
 function clickableGrid( rows, cols, callback ){
 var i=0;
 var grid = document.createElement('table');
-
 grid.className = 'grid';
 for (var r=0;r<rows;++r){
 var tr = grid.appendChild(document.createElement('tr'));
@@ -44,27 +39,18 @@ callback(el,r,c,i);
 })(cell,r,c,i),false);
 }
 }
-
 return grid;
 }
-
-  function myFunction() {
-    location.reload();
-    console.log("Resetting");
-  }
-
-
-function mySavedHTML() {
-  myhtml = $('table').html();
-  console.log(myhtml,typeof myhtml);
-  $.ajax({
-    type:"POST",
-    url: '/postmethod',
-    data: {html:myhtml}
-  });
+function myFunction() {
+location.reload();
+console.log("Resetting");
 }
-
- 
-
-
-
+function mySavedHTML() {
+myhtml = $('table').html();
+console.log(myhtml,typeof myhtml);
+$.ajax({
+type:"POST",
+url: '/postmethod',
+data: {html:myhtml}
+});
+}
