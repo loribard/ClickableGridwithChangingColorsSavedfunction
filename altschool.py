@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 app.secret_key = "ABC"
+app.config.update(TEMPLATES_AUTO_RELOAD=True)
 
 
 @app.route('/')
