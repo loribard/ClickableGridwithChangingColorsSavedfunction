@@ -29,7 +29,7 @@ def get_post_javascript_data():
     filename = open('templates/saved.html', 'w')
     jsdata = request.form.get('html').encode('utf-8')
     html_begin = "<!doctype html><html><head><link href='/static/style.css' rel='stylesheet'></head><body><table class='grid'>"
-    html_end = '</table></body></html>'
+    html_end = '<input action="action" onclick="history.go(-1);" type="button" value="Back" /></table></body></html>'
     message = html_begin + jsdata + html_end
     filename.write(message)
     filename.close()
